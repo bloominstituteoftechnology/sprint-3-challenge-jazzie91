@@ -244,12 +244,7 @@
     }
 
     this.ants = this.ants.filter(ant => ant.health > 0);
-
-    if (this.ants.length === 0) {
-        return "No ants here. Did you work them to death?";
-    }
-
-    return `${antsStartingWork} ant${antsStartingWork === 1 ? '' : 's'} starting work!`;
+    return `${antsStartingWork} ants starting work!`;
 }
 
   feed(antName) { 
